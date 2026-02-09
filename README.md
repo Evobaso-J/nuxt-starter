@@ -1,17 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Nuxt Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies through pnpm. 
-Use corepack to enable the right version of pnpm.
+Make sure to install dependencies:
 
-More information about corepack can be found [in this article](https://www.totaltypescript.com/how-to-use-corepack)
-
-Then run the following:
 ```bash
-pnpm i
+# npm
+npm install
+
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
 ## Development Server
@@ -19,22 +25,51 @@ pnpm i
 Start the development server on `http://localhost:3000`:
 
 ```bash
+# npm
+npm run dev
+
+# pnpm
 pnpm dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
 ## Production
 
-If you want to see the production build locally, you can do so by following the steps below.
-
 Build the application for production:
 
 ```bash
+# npm
+npm run build
+
+# pnpm
 pnpm build
+
+# yarn
+yarn build
+
+# bun
+bun run build
 ```
 
 Locally preview production build:
 
 ```bash
+# npm
+npm run preview
+
+# pnpm
 pnpm preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
 ```
 
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
