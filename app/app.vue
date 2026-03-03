@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <UApp>
     {{ $t('welcome') }}
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
-  </div>
+  </UApp>
 </template>
