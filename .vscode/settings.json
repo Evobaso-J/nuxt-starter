@@ -1,5 +1,11 @@
 {
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
   "editor.formatOnSave": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
@@ -14,6 +20,9 @@
     "ui",
     "active-class",
     "inactive-class",
+  ],
+  "tailwindCSS.experimental.classRegex": [
+    ["ui:\\s*{([^)]*)\\s*}", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
   ],
   "colorize.languages": [
     "css",
