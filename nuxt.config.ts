@@ -4,6 +4,8 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/i18n', '@nuxt/test-utils/module'],
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
+  runtimeConfig: {},
+  ignore: ['**/*.test.ts', '**/*.spec.ts'],
   typescript: {
     /**
      * Might throw and error on running the dev server that looks like this:
@@ -16,11 +18,11 @@ export default defineNuxtConfig({
   },
   i18n: {
     locales: [
-      { code: 'en', language: 'en-US' },
+      { code: 'en', language: 'en-US', file: 'en.json' },
     ],
     defaultLocale: 'en',
   },
   eslint: {
     /* Your ESLint options here */
-  }
+  },
 })
