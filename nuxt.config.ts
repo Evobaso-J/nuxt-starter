@@ -5,7 +5,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   devtools: { enabled: true },
   runtimeConfig: {},
-  ignore: ['**/*.test.ts', '**/*.spec.ts'],
+  // `.claude/` holds agent worktrees: watching them exhausts file descriptors.
+  ignore: ['**/*.test.ts', '**/*.spec.ts', '.claude/**'],
   typescript: {
     /**
      * Might throw and error on running the dev server that looks like this:
